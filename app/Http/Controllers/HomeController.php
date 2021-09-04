@@ -11,8 +11,10 @@ class HomeController extends Controller
     public function index()
     {
         $subjects = Subject::all();
-        $chapters = Chapter::all();
+        // $chapters = Chapter::all();
 
-        return view('welcome', compact('subjects', 'chapters'));
+        // return view('welcome', compact('subjects', 'chapters'));
+
+        return view('admin', compact('subjects'));
     }
 }
